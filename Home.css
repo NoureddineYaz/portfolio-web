@@ -1,0 +1,124 @@
+body {
+    margin: auto;
+    background-image: url('images/travel-hd-vxjzavxhlyez3ncc.jpg');
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #333;
+  }
+.navbar {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+
+    padding: 5px 10px;
+    margin: 5px 10px;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  }
+  
+  .navbar a:hover {
+    font-style: italic;
+    font-size: 20px;
+  }
+
+.navbar.animated li {
+    transform: translateY(-5px);
+}
+
+header {
+    
+    color: black;
+    text-align: center;
+    padding: 20px 0;
+}
+
+section {
+    padding: 20px;
+}
+
+footer {
+    
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+.country {
+    font-weight: bold;
+    color: #3366cc;
+    
+}
+
+li {
+    padding: 10px;
+    margin-bottom: 10px;
+    font-family: Arial, sans-serif;
+    
+    text-align: center;
+    line-height: 1.5;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  li:hover {
+    background-color: #f0f0f0;
+  }
+.burger-menu {
+    display: none; 
+    
+}
+.burger-links{
+    display: none;
+}
+@media only screen and (max-width: 600px) {
+    
+    .navbar {
+        display: none; 
+    }
+
+    .burger-menu {
+        display: block;
+        cursor: pointer;
+        padding: 10px;
+        background-color: #2e2828;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+
+        display: flex;
+        align-items: center;
+    }
+    .burger-links a {
+        display: block;
+        color: #fff;
+        text-decoration: none;
+        padding: 8px 15px;
+        margin: 5px 0;
+        transition: 0.3s;
+    }
+    
+    .burger-links a:hover {
+        background-color: #555;
+    }
+    
+    
+
+    .burger-links.active {
+        display: block; 
+    }
+
+
+    footer {
+        font-size: 14px;
+    }
+}
